@@ -1,8 +1,8 @@
-# Not A Film Camera — Website
+# Later Website
 
 Static marketing site + legal pages for the [Not A Film Camera](https://apps.apple.com/app/apple-store/id6468926207) iOS app.
 
-Plain HTML/CSS — no build step.
+Plain HTML/CSS, no build step.
 
 ## Structure
 
