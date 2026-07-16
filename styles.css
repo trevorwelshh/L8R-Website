@@ -200,7 +200,8 @@ a:hover { text-decoration: underline; }
 	padding: 70px 0;
 	border-top: 1px solid var(--border);
 }
-.cta h2 { font-size: 1.7rem; margin-bottom: 22px; }
+.cta h2 { font-size: 1.7rem; margin-bottom: 12px; }
+.cta p { color: var(--text-dim); max-width: 460px; margin: 0 auto 26px; }
 
 /* Legal / content pages */
 .content { padding: 56px 0 72px; flex: 1; }
