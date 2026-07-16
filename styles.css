@@ -49,47 +49,6 @@ a:hover { text-decoration: underline; }
 	padding: 0 24px;
 }
 
-/* Header / nav: the app's tab bar language: caps words on a hairline. */
-.site-header {
-	border-bottom: 1px solid var(--border);
-	background: rgba(10, 9, 10, 0.85);
-	backdrop-filter: saturate(160%) blur(10px);
-	position: sticky;
-	top: 0;
-	z-index: 10;
-}
-.nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 60px;
-}
-.brand {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	color: var(--text);
-	font-size: 0.8rem;
-	font-weight: 500;
-	text-transform: uppercase;
-	letter-spacing: 0.08em;
-}
-.brand:hover { text-decoration: none; }
-.brand .dot {
-	width: 8px; height: 8px; border-radius: 50%;
-	background: var(--accent);
-}
-.nav-links {
-	display: flex;
-	gap: 24px;
-	font-size: 0.75rem;
-	font-weight: 500;
-	text-transform: uppercase;
-	letter-spacing: 0.08em;
-}
-.nav-links a { color: var(--text-faint); }
-.nav-links a:hover { color: var(--text); text-decoration: none; }
-
 /* Hero */
 .hero {
 	text-align: center;
@@ -232,10 +191,9 @@ a:hover { text-decoration: underline; }
 	justify-content: space-between;
 }
 .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
-.footer-links a { color: var(--text-faint); }
-.footer-links a:hover { color: var(--text); text-decoration: none; }
+.footer-links a, .footer-inner > a { color: var(--text-faint); }
+.footer-links a:hover, .footer-inner > a:hover { color: var(--text); text-decoration: none; }
 
 @media (max-width: 520px) {
-	.nav-links { gap: 16px; }
 	.hero { padding: 70px 0 0; }
 }
