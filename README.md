@@ -1,6 +1,6 @@
-# Later Website
+# L8R Website
 
-Static marketing site + legal pages for the [Not A Film Camera](https://apps.apple.com/app/apple-store/id6468926207) iOS app.
+Static marketing site + legal pages for the [L8R](https://apps.apple.com/app/apple-store/id6468926207) iOS app.
 
 Plain HTML/CSS, no build step.
 
@@ -33,7 +33,7 @@ python3 -m http.server 8000
    - **Framework preset:** None
    - **Build command:** *(leave empty)*
    - **Build output directory:** `/`
-4. Deploy. Then add the custom domain **latercamera.app** under the project's **Custom domains** tab (Cloudflare will set the DNS records automatically if the domain is on your Cloudflare account).
+4. Deploy. Then add the custom domain **l8r.camera** under the project's **Custom domains** tab (Cloudflare will set the DNS records automatically if the domain is on your Cloudflare account).
 
 Every push to the default branch redeploys automatically.
 
