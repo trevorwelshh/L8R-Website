@@ -12,6 +12,7 @@
 	--max-width: 760px;
 	--radius: 20px;
 	font-size: 16px;
+	color-scheme: dark;
 }
 
 /* App tokens are authored in Display P3; match them exactly where supported. */
@@ -30,7 +31,7 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background: var(--bg); }
 
 body {
 	background: var(--bg);
