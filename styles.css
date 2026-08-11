@@ -120,6 +120,15 @@ a:hover { text-decoration: underline; }
 .appstore-btn .small { display: block; font-size: 0.7rem; font-weight: 500; opacity: 0.7; line-height: 1; margin-bottom: 2px; }
 .appstore-btn .big { display: block; font-size: 1.05rem; line-height: 1.1; }
 
+/* Download redirect page hint (in-app browser escape). */
+.hint {
+	color: var(--text-dim);
+	font-size: 0.9rem;
+	max-width: 360px;
+	margin: 26px auto 0;
+}
+.hint strong { color: var(--text); font-weight: 500; }
+
 /* Legal / content pages */
 .content { padding: 56px 0 72px; flex: 1; }
 .content h1 { font-size: 2rem; margin-bottom: 6px; }
