@@ -1,17 +1,31 @@
-/* L8R site styles, matched to the app's Latent design system */
+/* L8R site styles, matched to the app's color tokens (Assets.xcassets/Colors/UI) */
 
 :root {
-	--bg: #0a090a;              /* background */
-	--bg-soft: #141315;         /* secondaryBackground */
-	--surface: #232226;         /* tertiaryBackground */
+	--bg: #080808;              /* background */
+	--bg-soft: #121212;         /* secondaryBackground */
+	--surface: #1a1a1a;         /* tertiaryBackground */
 	--text: #f4f4f2;            /* label */
 	--text-dim: #a3a29d;        /* secondaryLabel */
 	--text-faint: #585854;      /* tertiaryLabel */
-	--accent: #e8c24e;          /* golden amber */
+	--accent: #e8c24e;          /* accent, warm amber */
 	--border: rgba(255, 255, 255, 0.08); /* separator */
 	--max-width: 760px;
 	--radius: 20px;
 	font-size: 16px;
+}
+
+/* App tokens are authored in Display P3; match them exactly where supported. */
+@supports (color: color(display-p3 1 1 1)) {
+	:root {
+		--bg: color(display-p3 0.031 0.031 0.031);
+		--bg-soft: color(display-p3 0.071 0.071 0.071);
+		--surface: color(display-p3 0.102 0.102 0.102);
+		--text: color(display-p3 0.957 0.957 0.949);
+		--text-dim: color(display-p3 0.639 0.635 0.616);
+		--text-faint: color(display-p3 0.345 0.345 0.329);
+		--accent: color(display-p3 0.910 0.761 0.306);
+		--border: color(display-p3 0.996 1 1 / 0.08);
+	}
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -58,7 +72,7 @@ a:hover { text-decoration: underline; }
 	justify-content: center;
 	text-align: center;
 	padding: 40px 0;
-	background: linear-gradient(180deg, rgba(20, 19, 21, 0.5), var(--bg));
+	background: linear-gradient(180deg, color-mix(in srgb, var(--bg-soft) 50%, transparent), var(--bg));
 }
 .app-icon {
 	width: 104px;
